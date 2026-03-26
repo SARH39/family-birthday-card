@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+        <style>
+            body {
+                text-align: center;
+                font-family: 'Happy Monkey', cursive;
+                background: url("https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3YTZqdWwyMjQxZW16NjBtN2M2Z2gyenV4b3pkMm5iaHl0ZXdxdGdoYiZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/huyH71kYdxXNe6P59Q/giphy.gif"),linear-gradient(40deg,#fc8a15, #fff6a2);
+                color: #ffffff;
+            }
+
+            h1, h2, h3, h4, p {
+                text-shadow: 0 0 4px black;
+            } 
+
+            #bff-img {
+                width: 150px;
+                border-radius: 50%;
+                border: 6px solid #fc8a15;
+                margin-bottom: 10px;
+            }
+
+            #bday-age {
+                background: #fc8a15;
+                padding: 5px 10px;
+                border-radius: 5px;
+                margin: 5px 0 10px 0;
+            }
+
+            #bday-date {
+                margin: 0;
+                background: #fc8a15;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+
+            #header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .gift-section {
+                margin-top: 50px;
+            }
+
+            .gift-title {
+                margin-bottom: 10px;
+            }
+
+            .gift-hint {
+                margin-top: 0;
+            }
+/* 
+            #gift-img-cheers {
+                height: 200px;
+            } */
+           
+           
+
+            .gift-img {
+                margin: 20px auto;
+                width: 500px;
+                height: 570px;
+                border: 6px solid white;
+                border-radius: 10px;
+                background-image: url("https://images.unsplash.com/photo-1764764138546-cedd1745362b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+                background-size:cover;
+                background-position: center;
+                transition: 1s ease-in-out;
+                
+            }
+
+            #gift-img-master:hover {
+                background: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHFpamF5b3Vld2wzYjc0ejJ3ODU0bmlnMWgxc2U3OHVvbHJtN3VlMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l1KueSslKK00UqoF2/giphy.gif") no-repeat;
+                background-size: cover;
+                background-position: center;     
+                
+            }
+
+            #gift-img-strategy:hover {
+                background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDE0cGp1dXJheGJxNHlyaXN1ZWVscTB1c2FwOW10Z2VxdjJocDljOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/L4RZloecys3VCAojKs/giphy.gif");
+            }
+
+            #gift-img-awesome:hover {
+                background: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnFlZnA0aXdxN3hscmh4bmpyczhoamEzZ2hneDhmd3F1Y2EzOGpxdyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3ohzdIuqJoo8QdKlnW/giphy.gif")no-repeat;
+                background-size: contain;
+                background-position: center;
+                height:187px;
+                width: 400px;
+                transition: 1s ease-in-out;
+            }
+
+            #gift-img-badass:hover {
+                background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDh4YmE4d2g3NXhlNGx3eTZsYzR6ZXV6d3BxYW5jeWpnYXk5aWwxNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ZT6vqo2yTz6FW0LC2z/giphy.gif");
+                background-size: cover;
+                background-position: bottom;
+                height: 770px;
+                transition: 1s ease-in-out;
+            }
+
+            #gift-img-cheers:hover {
+                background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzNsN28xYzd6NDJiaXNtajY1OGFzYmJ3dzZkbzJkd3k5dzgzOWZybiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/bIEzoZX0qJaG6s6frc/giphy.gif");
+            }
+
+            #footer {
+                display:flex;
+                justify-content: space-around;
+                font-style: italic;
+                width: 400px;
+                margin: 40px auto 20px;
+            }
+
+            a {
+                color: white;
+            }   
+        </style>
+        
+    </head>
+    <body>
+        <div id="header">
+            <h1>Today is Alejandro's birthday 🎉</h1>
+            <img id="bff-img" src="/images/alejandro.png">
+            <h2 id="bday-age">24 years old</h2>
+            <h4 id="bday-date">01.03.2002</h4>
+        </div>
+        
+        <div class="gift-section">
+            <h2 class="gift-title">The family's clarinet master 🎶 </h2>
+            <h3 class="gift-hint">(Hover over the gift)</h3>
+            <div class="gift-img" id="gift-img-master" role="img" aria-label="An squid character with a clarinet in her hand anounce the arrive of the king of clarinets"></div>
+        </div>
+        
+        <div class="gift-section">
+            <h2 class="gift-title">Good at strategy games ♟️</h2>
+            <div class="gift-img" id="gift-img-strategy"role="img" aria-label="A table chess game "></div>
+        </div>
+        
+        <div class="gift-section">
+            <h2 class="gift-title">If I had to describe you with ONE word 👇</h2>
+            <div class="gift-img" id="gift-img-awesome" role="img" aria-label="a man shout AWESOME  inside a supermarket"></div>
+        </div>
+        
+        <div class="gift-section">
+            <h2 class="gift-title">The only person as badass as you 💪</h2>
+            <div class="gift-img" id="gift-img-badass"role="img" aria-label="A cock-chicken wearing the iron-man mecanice suite"></div>
+        </div>
+        
+         <div class="gift-section">
+            <h2 class="gift-title">This one's for you, my friend 🥂</h2>
+            <div class="gift-img" id="gift-img-cheers"role="img" aria-label="A wrestler fighter cheering with to beers can"></div>
+        </div>
+        
+        <footer id="footer">
+
+            <p>Want to come back to the main page <a href="/index.html">Click here.</a></p>
+            
+            <p>Want to view the next birthday family member <a href="/pages/mama.html">Click here.</a></p>
+        
+        </footer>
+        
+    </body>
+</html>
